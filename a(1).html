@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="f1(5,10)">Click Me</button>
+    <p id="i1"></p>
+    <p id="i2"></p>
+    <p id="i3"></p>
+
+    <button onclick="f2(15,10)">Click Me</button>
+    <p id="i4"></p>
+    <p id="i5"></p>
+    <p id="i6"></p>
+
+    <button onclick="f3(20,10)">Click Me</button>
+    <p id="i7"></p>
+    <p id="i8"></p>
+    <p id="i9"></p>
+
+    <button onclick="f4(30,10)">Click Me</button>
+    <p id="i10"></p>
+    <p id="i11"></p>
+    <p id="i12"></p>
+
+
+    <script>
+        function f1(a, b) {
+            document.getElementById("i1").innerHTML = a;
+            document.getElementById("i2").innerHTML = b;
+            document.getElementById("i3").innerHTML = "Result = " + (a * b);
+        }
+
+        function f2(c, d) {
+            document.getElementById("i4").innerHTML = c;
+            document.getElementById("i5").innerHTML = d;
+            document.getElementById("i6").innerHTML = "Result = " + (c / d);
+        }
+
+        function f3(e, f) {
+            document.getElementById("i7").innerHTML = e;
+            document.getElementById("i8").innerHTML = f;
+            document.getElementById("i9").innerHTML = "Result = " + (e + f);
+        }
+
+        function f4(g, h) {
+            document.getElementById("i10").innerHTML = g;
+            document.getElementById("i11").innerHTML = h;
+            document.getElementById("i12").innerHTML = "Result = " + (g - h);
+        }
+
+    </script>
+</body>
+
+</html>
